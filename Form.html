@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrity Survey Form</title>
+    <link rel="stylesheet" href="Styles2.css">
+</head>
+<body>
+    <div class="container">
+        <h1 id="title">Celebrity Survey</h1>
+        <p id="description">Please fill out the form below to share your opinions about your favorite modern celebrities or singers.</p>
+        
+        <form id="survey-form" action="#" method="get">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number">Age:</label>
+                <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="120" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dropdown">Favorite Celebrity:</label>
+                <select id="dropdown" name="favorite-celebrity" required>
+                    <option value="">Select a celebrity</option>
+                    <option value="beyonce">Beyoncé</option>
+                    <option value="drake">Ariana Grande</option>
+                    <option value="taylor_swift">Taylor Swift</option>
+                    <option value="justin_bieber">Justin Bieber</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p>What genre of music do you prefer?</p>
+                <label><input type="radio" name="genre" value="pop" required> Pop</label><br>
+                <label><input type="radio" name="genre" value="hip-hop"> Hip-Hop</label><br>
+                <label><input type="radio" name="genre" value="rock"> Rock</label><br>
+                <label><input type="radio" name="genre" value="jazz"> Jazz</label>
+            </div>
+
+            <div class="form-group">
+                <p>Select the following activities you enjoy:</p>
+                <label><input type="checkbox" name="activities" value="concerts"> Going to Concerts</label><br>
+                <label><input type="checkbox" name="activities" value="streaming"> Streaming Music</label><br>
+                <label><input type="checkbox" name="activities" value="merchandise"> Buying Merchandise</label><br>
+                <label><input type="checkbox" name="activities" value="fan_clubs"> Joining Fan Clubs</label>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Share any additional thoughts..."></textarea>
+            </div>
+
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
